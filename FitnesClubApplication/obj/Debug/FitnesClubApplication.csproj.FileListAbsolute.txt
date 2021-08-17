@@ -1,0 +1,108 @@
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe.config
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.pdb
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.dll
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.xml
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csprojAssemblyReference.cache
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.Form1.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmClients.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.Properties.Resources.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.GenerateResource.cache
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CoreCompileInputs.cache
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CopyComplete
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.exe
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.pdb
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditClients.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmAbonement.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditAbonement.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditService.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmServices.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditTrainer.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmTrainers.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditSale.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmSales.resources
+C:\Users\Старик\source\repos\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmGain.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe.config
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.pdb
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.dll
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.dll
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.xml
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.xml
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\ru\EntityFramework.resources.dll
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csprojAssemblyReference.cache
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.Form1.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmAbonement.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmClients.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditAbonement.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditClients.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditSale.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditService.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditTrainer.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmGain.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmSales.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmServices.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmTrainers.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.Properties.Resources.resources
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.GenerateResource.cache
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CoreCompileInputs.cache
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CopyComplete
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.exe
+D:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.pdb
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe.config
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\FitnesClubApplication.pdb
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.dll
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.dll
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.xml
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.xml
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\bin\Debug\ru\EntityFramework.resources.dll
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.AssemblyReference.cache
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.Form1.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmAbonement.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmClients.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditAbonement.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditClients.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditSale.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditService.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditTrainer.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmGain.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmSales.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmServices.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmTrainers.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.Properties.Resources.resources
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.GenerateResource.cache
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CoreCompileInputs.cache
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CopyComplete
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.exe
+F:\Учёба\5 семестр\Базы данных\Курсовая работа Базы данных\FitnesClubApplication\FitnesClubApplication\obj\Debug\FitnesClubApplication.pdb
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe.config
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\FitnesClubApplication.exe
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\FitnesClubApplication.pdb
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\EntityFramework.dll
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\EntityFramework.xml
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.AssemblyReference.cache
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.Form1.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmAbonement.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmClients.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditAbonement.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditClients.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditSale.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditService.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmEditTrainer.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmGain.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmSales.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmServices.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.frmTrainers.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.Properties.Resources.resources
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.GenerateResource.cache
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CoreCompileInputs.cache
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.csproj.CopyComplete
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.exe
+C:\Users\ShihalevSA\Source\Repos\fitnesclub\FitnesClubApplication\obj\Debug\FitnesClubApplication.pdb

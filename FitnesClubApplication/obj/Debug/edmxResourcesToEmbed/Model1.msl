@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище FitnessClubModelContainer" CdmEntityContainer="FitnessClubEntities1">
+    <EntitySetMapping Name="Abonement">
+      <EntityTypeMapping TypeName="FitnessClubModel.Abonement">
+        <MappingFragment StoreEntitySet="Abonement">
+          <ScalarProperty Name="IdAbonement" ColumnName="IdAbonement" />
+          <ScalarProperty Name="NameAbonement" ColumnName="NameAbonement" />
+          <ScalarProperty Name="DurationAbonement" ColumnName="DurationAbonement" />
+          <ScalarProperty Name="PriceAbonement" ColumnName="PriceAbonement" />
+          <ScalarProperty Name="IdService" ColumnName="IdService" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="FitnessClubModel.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="NameClient" ColumnName="NameClient" />
+          <ScalarProperty Name="AddressClient" ColumnName="AddressClient" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="DateOfBirthdayClient" ColumnName="DateOfBirthdayClient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sale">
+      <EntityTypeMapping TypeName="FitnessClubModel.Sale">
+        <MappingFragment StoreEntitySet="Sale">
+          <ScalarProperty Name="SaleCode" ColumnName="SaleCode" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="IdAbonement" ColumnName="IdAbonement" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Service">
+      <EntityTypeMapping TypeName="FitnessClubModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="IdService" ColumnName="IdService" />
+          <ScalarProperty Name="KindService" ColumnName="KindService" />
+          <ScalarProperty Name="IdTrainer" ColumnName="IdTrainer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trainers">
+      <EntityTypeMapping TypeName="FitnessClubModel.Trainers">
+        <MappingFragment StoreEntitySet="Trainers">
+          <ScalarProperty Name="IdTrainer" ColumnName="IdTrainer" />
+          <ScalarProperty Name="NameTrainer" ColumnName="NameTrainer" />
+          <ScalarProperty Name="PhoneTrainer" ColumnName="PhoneTrainer" />
+          <ScalarProperty Name="AddressTrainer" ColumnName="AddressTrainer" />
+          <ScalarProperty Name="SalaryTrainer" ColumnName="SalaryTrainer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

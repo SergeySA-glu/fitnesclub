@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище FitnessClubModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Abonement">
+          <Key>
+            <PropertyRef Name="IdAbonement" />
+          </Key>
+          <Property Name="IdAbonement" Type="int" Nullable="false" />
+          <Property Name="NameAbonement" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DurationAbonement" Type="int" Nullable="false" />
+          <Property Name="PriceAbonement" Type="numeric" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="IdService" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="IdClient" />
+          </Key>
+          <Property Name="IdClient" Type="int" Nullable="false" />
+          <Property Name="NameClient" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="AddressClient" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="Phone" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="DateOfBirthdayClient" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="SaleCode" />
+          </Key>
+          <Property Name="SaleCode" Type="int" Nullable="false" />
+          <Property Name="SaleDate" Type="date" Nullable="false" />
+          <Property Name="IdAbonement" Type="int" Nullable="false" />
+          <Property Name="IdClient" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Service">
+          <Key>
+            <PropertyRef Name="IdService" />
+          </Key>
+          <Property Name="IdService" Type="int" Nullable="false" />
+          <Property Name="KindService" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="IdTrainer" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Trainers">
+          <Key>
+            <PropertyRef Name="IdTrainer" />
+          </Key>
+          <Property Name="IdTrainer" Type="int" Nullable="false" />
+          <Property Name="NameTrainer" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="PhoneTrainer" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="AddressTrainer" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="SalaryTrainer" Type="numeric" Precision="15" Scale="2" Nullable="false" />
+        </EntityType>
+        <Association Name="Abonement_Sale_fk">
+          <End Role="Abonement" Type="Self.Abonement" Multiplicity="1" />
+          <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Abonement">
+              <PropertyRef Name="IdAbonement" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="IdAbonement" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Clients_Sale_fk">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+          <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="IdClient" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Service_Abonement_fk">
+          <End Role="Service" Type="Self.Service" Multiplicity="1" />
+          <End Role="Abonement" Type="Self.Abonement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Service">
+              <PropertyRef Name="IdService" />
+            </Principal>
+            <Dependent Role="Abonement">
+              <PropertyRef Name="IdService" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Trainers_Service_fk">
+          <End Role="Trainers" Type="Self.Trainers" Multiplicity="1" />
+          <End Role="Service" Type="Self.Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trainers">
+              <PropertyRef Name="IdTrainer" />
+            </Principal>
+            <Dependent Role="Service">
+              <PropertyRef Name="IdTrainer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище FitnessClubModelContainer">
+          <EntitySet Name="Abonement" EntityType="Self.Abonement" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clients" EntityType="Self.Clients" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sale" EntityType="Self.Sale" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Service" EntityType="Self.Service" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Trainers" EntityType="Self.Trainers" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Abonement_Sale_fk" Association="Self.Abonement_Sale_fk">
+            <End Role="Abonement" EntitySet="Abonement" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="Clients_Sale_fk" Association="Self.Clients_Sale_fk">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="Service_Abonement_fk" Association="Self.Service_Abonement_fk">
+            <End Role="Service" EntitySet="Service" />
+            <End Role="Abonement" EntitySet="Abonement" />
+          </AssociationSet>
+          <AssociationSet Name="Trainers_Service_fk" Association="Self.Trainers_Service_fk">
+            <End Role="Trainers" EntitySet="Trainers" />
+            <End Role="Service" EntitySet="Service" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FitnessClubModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Abonement">
+          <Key>
+            <PropertyRef Name="IdAbonement" />
+          </Key>
+          <Property Name="IdAbonement" Type="Int32" Nullable="false" />
+          <Property Name="NameAbonement" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DurationAbonement" Type="Int32" Nullable="false" />
+          <Property Name="PriceAbonement" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+          <Property Name="IdService" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Sale" Relationship="Self.Abonement_Sale_fk" FromRole="Abonement" ToRole="Sale" />
+          <NavigationProperty Name="Service" Relationship="Self.Service_Abonement_fk" FromRole="Abonement" ToRole="Service" />
+        </EntityType>
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="IdClient" />
+          </Key>
+          <Property Name="IdClient" Type="Int32" Nullable="false" />
+          <Property Name="NameClient" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AddressClient" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateOfBirthdayClient" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Sale" Relationship="Self.Clients_Sale_fk" FromRole="Clients" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="SaleCode" />
+          </Key>
+          <Property Name="SaleCode" Type="Int32" Nullable="false" />
+          <Property Name="SaleDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IdAbonement" Type="Int32" Nullable="false" />
+          <Property Name="IdClient" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Abonement" Relationship="Self.Abonement_Sale_fk" FromRole="Sale" ToRole="Abonement" />
+          <NavigationProperty Name="Clients" Relationship="Self.Clients_Sale_fk" FromRole="Sale" ToRole="Clients" />
+        </EntityType>
+        <EntityType Name="Service">
+          <Key>
+            <PropertyRef Name="IdService" />
+          </Key>
+          <Property Name="IdService" Type="Int32" Nullable="false" />
+          <Property Name="KindService" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IdTrainer" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Abonement" Relationship="Self.Service_Abonement_fk" FromRole="Service" ToRole="Abonement" />
+          <NavigationProperty Name="Trainers" Relationship="Self.Trainers_Service_fk" FromRole="Service" ToRole="Trainers" />
+        </EntityType>
+        <EntityType Name="Trainers">
+          <Key>
+            <PropertyRef Name="IdTrainer" />
+          </Key>
+          <Property Name="IdTrainer" Type="Int32" Nullable="false" />
+          <Property Name="NameTrainer" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PhoneTrainer" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AddressTrainer" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SalaryTrainer" Type="Decimal" Precision="15" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Service" Relationship="Self.Trainers_Service_fk" FromRole="Trainers" ToRole="Service" />
+        </EntityType>
+        <Association Name="Abonement_Sale_fk">
+          <End Role="Abonement" Type="Self.Abonement" Multiplicity="1" />
+          <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Abonement">
+              <PropertyRef Name="IdAbonement" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="IdAbonement" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Service_Abonement_fk">
+          <End Role="Service" Type="Self.Service" Multiplicity="1" />
+          <End Role="Abonement" Type="Self.Abonement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Service">
+              <PropertyRef Name="IdService" />
+            </Principal>
+            <Dependent Role="Abonement">
+              <PropertyRef Name="IdService" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Clients_Sale_fk">
+          <End Role="Clients" Type="Self.Clients" Multiplicity="1" />
+          <End Role="Sale" Type="Self.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clients">
+              <PropertyRef Name="IdClient" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="IdClient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Trainers_Service_fk">
+          <End Role="Trainers" Type="Self.Trainers" Multiplicity="1" />
+          <End Role="Service" Type="Self.Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Trainers">
+              <PropertyRef Name="IdTrainer" />
+            </Principal>
+            <Dependent Role="Service">
+              <PropertyRef Name="IdTrainer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FitnessClubEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Abonement" EntityType="Self.Abonement" />
+          <EntitySet Name="Clients" EntityType="Self.Clients" />
+          <EntitySet Name="Sale" EntityType="Self.Sale" />
+          <EntitySet Name="Service" EntityType="Self.Service" />
+          <EntitySet Name="Trainers" EntityType="Self.Trainers" />
+          <AssociationSet Name="Abonement_Sale_fk" Association="Self.Abonement_Sale_fk">
+            <End Role="Abonement" EntitySet="Abonement" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="Service_Abonement_fk" Association="Self.Service_Abonement_fk">
+            <End Role="Service" EntitySet="Service" />
+            <End Role="Abonement" EntitySet="Abonement" />
+          </AssociationSet>
+          <AssociationSet Name="Clients_Sale_fk" Association="Self.Clients_Sale_fk">
+            <End Role="Clients" EntitySet="Clients" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="Trainers_Service_fk" Association="Self.Trainers_Service_fk">
+            <End Role="Trainers" EntitySet="Trainers" />
+            <End Role="Service" EntitySet="Service" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище FitnessClubModelContainer" CdmEntityContainer="FitnessClubEntities1">
+          <EntitySetMapping Name="Abonement">
+            <EntityTypeMapping TypeName="FitnessClubModel.Abonement">
+              <MappingFragment StoreEntitySet="Abonement">
+                <ScalarProperty Name="IdAbonement" ColumnName="IdAbonement" />
+                <ScalarProperty Name="NameAbonement" ColumnName="NameAbonement" />
+                <ScalarProperty Name="DurationAbonement" ColumnName="DurationAbonement" />
+                <ScalarProperty Name="PriceAbonement" ColumnName="PriceAbonement" />
+                <ScalarProperty Name="IdService" ColumnName="IdService" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clients">
+            <EntityTypeMapping TypeName="FitnessClubModel.Clients">
+              <MappingFragment StoreEntitySet="Clients">
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+                <ScalarProperty Name="NameClient" ColumnName="NameClient" />
+                <ScalarProperty Name="AddressClient" ColumnName="AddressClient" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="DateOfBirthdayClient" ColumnName="DateOfBirthdayClient" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sale">
+            <EntityTypeMapping TypeName="FitnessClubModel.Sale">
+              <MappingFragment StoreEntitySet="Sale">
+                <ScalarProperty Name="SaleCode" ColumnName="SaleCode" />
+                <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+                <ScalarProperty Name="IdAbonement" ColumnName="IdAbonement" />
+                <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Service">
+            <EntityTypeMapping TypeName="FitnessClubModel.Service">
+              <MappingFragment StoreEntitySet="Service">
+                <ScalarProperty Name="IdService" ColumnName="IdService" />
+                <ScalarProperty Name="KindService" ColumnName="KindService" />
+                <ScalarProperty Name="IdTrainer" ColumnName="IdTrainer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Trainers">
+            <EntityTypeMapping TypeName="FitnessClubModel.Trainers">
+              <MappingFragment StoreEntitySet="Trainers">
+                <ScalarProperty Name="IdTrainer" ColumnName="IdTrainer" />
+                <ScalarProperty Name="NameTrainer" ColumnName="NameTrainer" />
+                <ScalarProperty Name="PhoneTrainer" ColumnName="PhoneTrainer" />
+                <ScalarProperty Name="AddressTrainer" ColumnName="AddressTrainer" />
+                <ScalarProperty Name="SalaryTrainer" ColumnName="SalaryTrainer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
