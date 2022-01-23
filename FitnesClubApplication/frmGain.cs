@@ -45,35 +45,41 @@ namespace FitnesClubApplication
             minSaleDate = dtpMinSaleDate.Value;
             maxSaleDate = dtpMaxSaleDate.Value;
             decimal sum = 0;
-            
-            string path = @"c:\Report.txt";
-            StreamWriter write = new StreamWriter(path, false, System.Text.Encoding.Default);
-
-            FileInfo file = new FileInfo(path);
-            if (!file.Exists) file.Create();
-            else
+            try
             {
-                var text = db.Sale.ToList();
-                write.WriteLine("Код продажи: Дата продажи - Услуга по абонементу - Клиент - Стоимость абонемента\n");
-                write.WriteLine("");
-                foreach (var row in text)
+                string path = @"c:\Report.txt";
+                StreamWriter write = new StreamWriter(path, false, System.Text.Encoding.Default);
+
+                FileInfo file = new FileInfo(path);
+                if (!file.Exists) file.Create();
+                else
                 {
-                    if (row.SaleDate <= maxSaleDate & row.SaleDate > minSaleDate.AddDays(-1))
+                    var text = db.Sale.ToList();
+                    write.WriteLine("Код продажи: Дата продажи - Услуга по абонементу - Клиент - Стоимость абонемента\n");
+                    write.WriteLine("");
+                    foreach (var row in text)
                     {
-                        write.Write("{0}: {1} - {2} - {3} - {4}", 
-                            row.SaleCode, 
-                            row.SaleDate.ToShortDateString(), 
-                            row.Abonement.Service.KindService, 
-                            row.Clients.NameClient, 
-                            row.Abonement.PriceAbonement);
-                        sum += row.Abonement.PriceAbonement;
-                        write.WriteLine();
+                        if (row.SaleDate <= maxSaleDate & row.SaleDate > minSaleDate.AddDays(-1))
+                        {
+                            write.Write("{0}: {1} - {2} - {3} - {4}",
+                                row.SaleCode,
+                                row.SaleDate.ToShortDateString(),
+                                row.Abonement.Service.KindService,
+                                row.Clients.NameClient,
+                                row.Abonement.PriceAbonement);
+                            sum += row.Abonement.PriceAbonement;
+                            write.WriteLine();
+                        }
                     }
+                    write.WriteLine("\n");
+                    write.WriteLine("");
+                    write.WriteLine("Общая сумма: {0}", sum);
+                    write.Close();
                 }
-                write.WriteLine("\n");
-                write.WriteLine("");
-                write.WriteLine("Общая сумма: {0}", sum);
-                write.Close();
+            }
+            catch(Exception ex)
+            {
+                
             }
         }
 
